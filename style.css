@@ -1,0 +1,296 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  .profile-container, .contact-info {
+    background-color: #782221;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-sizing: border-box; /* Ajouté pour inclure le padding dans la largeur */
+  }
+  .profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 75px;
+  }
+  .name-title {
+    text-align: center;
+    margin: 0;
+  }
+  .name {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .contact-info {
+    background-color: #2c1d27;
+    display: flex;
+    justify-content: space-between; /* Ceci aligne les éléments aux deux extrémités */
+    align-items: center; /* Ceci centre les éléments verticalement */
+    padding: 10px; /* Hauteur réduite par le petit padding */
+  }
+  .address, .email, .phone {
+    color: #ffffff;
+  }
+  .profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 75px;
+    transition: transform 0.3s ease; /* Ajoutez cette ligne pour animer le zoom */
+    cursor: zoom-in; /* Change le curseur au survol */
+  }
+  
+  .profile-picture:hover {
+    transform: scale(1.1); /* Agrandit l'image de 10% lors du survol */
+  }  
+  .info-section {
+    background-color: #ffffff; /* Couleur de fond blanc */
+    color: #000000; /* Couleur du texte noir */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2, .info-section h3, .info-section p {
+    color: #000000; /* Assure que les titres et le texte sont en noir */
+  }
+  
+  .info-section p {
+    margin-bottom: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* S'assure que le contenu s'adapte à la largeur de l'écran */
+    gap: 20px; /* Espacement entre les sections */
+  }
+  
+  .info-section, .side-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info-section > div, .side-sections > div {
+    padding: 20px;
+    background-color: #dbc2a4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .side-sections > div {
+    /* Vous pouvez ajuster la largeur ou la laisser telle quelle pour qu'elle s'adapte */
+  }
+  
+  .info-section > div {
+    background-color: transparent; /* Si vous préférez que seules les sections latérales aient un fond coloré */
+    padding: 0; /* Ajuste ou supprime le padding selon le besoin */
+  }
+  
+  ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Espacement entre les éléments de liste */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne en fonction de la largeur de l'écran */
+  }
+  
+  .info-section {
+    flex-grow: 2; /* Donne plus d'espace à la section d'info par rapport aux sections latérales */
+    /* Assurez-vous que .info-section garde suffisamment d'espace pour votre contenu */
+  }
+  
+  .side-sections {
+    display: flex; /* Affiche les sous-sections côte à côte */
+    flex-grow: 1;
+    gap: 20px; /* Ajoute un espace entre les sous-sections */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'espace horizontal est insuffisant */
+  }
+  
+  .about-section, .languages-section, .interests-section {
+    flex-basis: calc(33.333% - 20px); /* Assigner une largeur initiale, en soustrayant l'espace du gap */
+    background-color: #dbc2a4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adaptations pour les titres, listes, et le reste du contenu */
+  h2, h4, p, ul, li {
+    margin: 0 0 10px;
+  }
+  
+  ul {
+    list-style-type: none; /* Enlève les puces de liste */
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Espacement entre les éléments de liste */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .main-content, .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 2; /* La section principale prend plus de place */
+    padding-right: 20px; /* Espace entre main-content et sidebar */
+  }
+  
+  .sidebar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les sections À propos, Langues parlées, et Centres d'intérêt */
+  }
+  
+  .sidebar > div {
+    background-color: #dbc2a4;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  .main-section {
+    background-color: #f4f4f4; /* Couleur de fond légère pour la section principale */
+    padding: 20px; /* Espace intérieur pour la section principale */
+    margin: 20px 0; /* Espace extérieur autour de la section principale */
+  }
+  
+  .main-section > div {
+    margin-bottom: 20px; /* Espace entre chaque sous-section */
+  }
+  
+  h2 {
+    color: #333; /* Couleur foncée pour les titres des sous-sections */
+    margin-bottom: 10px; /* Espace après les titres des sous-sections */
+  }
+  
+  h3 {
+    color: #666; /* Couleur plus claire pour les sous-titres */
+    margin-bottom: 5px; /* Espace après les sous-titres */
+  }
+  
+  p, li {
+    color: #666; /* Couleur de texte standard pour les paragraphes et éléments de liste */
+    line-height: 1.5; /* Espacement des lignes pour améliorer la lisibilité */
+  }
+  
+  ul {
+    list-style-type: none; /* Pas de puces pour les listes */
+    padding: 0; /* Pas de padding à gauche pour les listes */
+  }
+  .main-section, .sidebar {
+    background-color: #782221; /* Applique la couleur de fond désirée */
+    color: #ffffff; /* Change la couleur du texte pour un contraste élevé */
+    padding: 20px; /* Espace intérieur pour les sections */
+    margin-bottom: 20px; /* Espace entre les sections si elles sont l'une au-dessus de l'autre */
+  }
+  
+  .main-section > div, .sidebar > div {
+    margin-bottom: 20px; /* Espace entre chaque sous-section */
+  }
+  
+  h3, p, li {
+    color:white; /* Assure que le texte est bien lisible sur le fond foncé */
+  }
+  h2{
+    color: #000000;
+  }
+  
+  ul {
+    list-style-type: none; /* Pas de puces pour les listes */
+    padding: 0; /* Pas de padding à gauche pour les listes */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Espace après chaque élément de liste */
+  }
+  footer {
+    background-color: #782221; /* Correspond à votre couleur de fond des autres sections */
+    color: #ffffff; /* Texte en blanc pour un contraste élevé */
+    text-align: center; /* Centre le contenu du pied de page */
+    padding: 20px 0; /* Ajoute un peu d'espace au-dessus et en dessous du contenu */
+  }
+  
+  footer a {
+    color: #ffffff88; /* Assure que le lien est également en blanc */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol pour indiquer qu'il s'agit d'un lien */
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 1160px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box; /* Les marges internes et bordures sont comprises dans les largeurs et hauteurs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #782221; /* Bordure à droite */
+}
+
+.profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%; /* Rend la photo de profil arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre autour de la photo de profil */
+}
+
+.contact-info a {
+    display: block;
+    color: #782221;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.about-section p {
+    text-indent: 40px; /* Indentation sur la première ligne */
+}
